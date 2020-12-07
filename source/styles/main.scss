@@ -8,6 +8,8 @@
 @import "global/vars";
 @import "global/variables";
 @import "global/mixins";
+@import "global/common";
 @import "global/base";
 
 //main
+@import "sections/header";

@@ -1,0 +1,37 @@
+{
+  "name": "gross-market",
+  "version": "1.0.0",
+  "description": "Тестовое задание",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andre-Dragon/gross-market.git"
+  },
+  "author": "Andrey Alekseev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Andre-Dragon/gross-market/issues"
+  },
+  "homepage": "https://github.com/Andre-Dragon/gross-market#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglify-es": "^2.0.0",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "normalize.scss": "^0.1.0",
+    "reset.scss": "^1.0.0"
+  }
+}
