@@ -1,0 +1,26 @@
+@mixin button($bg: $bg-color, $borderColor: transparent) {
+  background-color: $second;
+  border-radius: 8px;
+  width: 187px;
+  height: 47px;
+  font-size: 18px;
+  color: $black;
+  text-align: center;
+  display: block;
+  appearance: none;
+  cursor: pointer;
+  transition: all .8s;
+  @content;
+
+  &:hover, &:active {
+    background-color: darken($second, 15%);
+  }
+}
+
+@mixin min-max($min-width, $max-width, $padding) {
+  min-width: $min-width;
+  max-width: $max-width;
+  padding: 0 $padding;
+  box-sizing: border-box;
+  margin: 0 auto;
+}

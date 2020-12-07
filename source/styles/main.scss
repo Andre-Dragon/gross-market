@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+@import "../../node_modules/normalize.scss/normalize";
+@import "../../node_modules/reset.scss/reset";
+
+//global
+@import "global/fonts";
+@import "global/vars";
+@import "global/variables";
+@import "global/mixins";
+@import "global/base";
+
+//main
