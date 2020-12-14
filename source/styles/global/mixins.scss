@@ -1,9 +1,6 @@
 @mixin button() {
   background-color: $second;
   border-radius: 8px;
-  font-family: $ff-body, sans-serif;
-  font-size: 1.125rem;
-  color: $black;
   text-align: center;
   display: block;
   appearance: none;

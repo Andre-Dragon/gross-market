@@ -17,9 +17,9 @@
 }
 
 .hide {
-  display: none;
+  display: none !important; 
 }
 
 .show {
-  display: flex;
+  display: flex !important; 
 }
