@@ -5,3 +5,21 @@
 .wrap {
   @include min-max(320px, 1188px, 39px);
 }
+
+.common__logo {
+  display: flex;
+  align-items: center;
+}
+
+.common__img {
+  width: 21px;
+  height: 30px;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: flex;
+}

@@ -2,9 +2,11 @@
 
 header.header
   .header__wrap.wrap
-    a(href="#").header__logo
-      img(src="images/icons/logo.svg" alt="Гросс маркет").header__img
-      p.header__name гросс маркет
+    a(href="#").header__logo.common__logo
+      img(src="images/icons/logo.svg" alt="Гросс маркет").header__img.common__img
+      h2.header__title гросс маркет
     a(href="tel:+79264331416").header__phone +7 (926) 433-14-16
     button.header__button.button заполнить анкету
   include banner
+
+// End header

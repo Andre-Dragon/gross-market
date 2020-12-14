@@ -5,6 +5,9 @@ $bg-banner: #F5F5F5;
   position: relative;
 
   &__carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     max-width: 100%;
     height: 400px;
     overflow: hidden;
@@ -16,9 +19,6 @@ $bg-banner: #F5F5F5;
     position: absolute;
     top: 0;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     transition: transform 1s;
   }
 
@@ -35,9 +35,7 @@ $bg-banner: #F5F5F5;
   }
 
   &__title {
-    width: 273px;
-    font-size: 4.5rem;
-    line-height: 66px;
+    width: 375px;
     margin: 48px 0 154px;
   }
 
@@ -48,26 +46,26 @@ $bg-banner: #F5F5F5;
     object-fit: contain;
   }
 
-  &__title--card {
+  &__text--card {
     position: absolute;
   }
 
-  &--title__name--first {
+  &--text__name--first {
     left: 120px;
     bottom: 156px;
   }
 
-  &--title__work--first {
+  &--text__work--first {
     top: 152px;
     right: 120px;
   }
 
-  &--title__name--second {
+  &--text__name--second {
     left: 120px;
     top: 152px;
   }
 
-  &--title__work--second {
+  &--text__work--second {
     right: 120px;
     bottom: 156px;
   }
@@ -88,6 +86,7 @@ $bg-banner: #F5F5F5;
     height: 44px;
     background-color: $white;
     border-radius: 8px;
+    opacity: 1;
   }
 
 }
@@ -98,6 +97,10 @@ $bg-banner: #F5F5F5;
   margin: 6.67px 8.5px 6.67px 6px;
 }
 
+.btn__hide {
+  opacity: 0.2;
+}
+
 .dividing__line {
   display: block;
   height: 28px;
@@ -105,7 +108,7 @@ $bg-banner: #F5F5F5;
   margin: 0 12px;
 }
 
-.title__card {
+.text__card {
   font-size: 1.5rem;
   line-height: 30px;
   border-radius: 50px;

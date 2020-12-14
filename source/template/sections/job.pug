@@ -1,13 +1,52 @@
-section
-  .job__openings
-    .job__wrap
-      .job__container
-        .job__title вакансии в гросс маркете
-        .job__btns
-          button.job__button.btn__prev
-            img.btn__img(src="images/icons/prev.svg" alt="назад")
-          button.job__button.btn__next
-            img.btn__img(src="images/icons/next.svg" alt="вперед")
+//- job
+
+section.job
+  .job__wrap.wrap
+    .job__header
+      h2.job__title вакансии в гросс маркете
+
+      .job__btns
+        button.job__button.btn__prev
+          img.btn__img(src="images/icons/prev.svg" alt="назад")
+        button.job__button.btn__next
+          img.btn__img(src="images/icons/next.svg" alt="вперед")
+
+    .job__main
       .job__carousel
-        .job__track
-          .job__item
+        .job__card
+          img.job__img(src="images/job/expert.png" alt="Товаровед")
+          p.job__name.text__card Товаровед        
+          .job__card--layer
+            p.job__discription Доставка товара по магазинам <br>и гипермаркетам компании в обслуживаемом регионе
+        .job__card
+          img.job__img(src="images/job/driver.png" alt="Водитель")
+          p.job__name.text__card Водитель                         
+          .job__card--layer
+            p.job__discription Доставка товара по магазинам <br>и гипермаркетам компании в обслуживаемом регионе
+        .job__card
+          img.job__img(src="images/job/baker.png" alt="Пекарь")
+          p.job__name.text__card Пекарь
+          .job__card--layer
+            p.job__discription Доставка товара по магазинам <br>и гипермаркетам компании в обслуживаемом регионе
+        .job__card
+          img.job__img(src="images/job/cashier.png" alt="Кассир")
+          p.job__name.text__card Кассир
+          .job__card--layer
+            p.job__discription Доставка товара по магазинам <br>и гипермаркетам компании в обслуживаемом регионе
+        .job__card
+          img.job__img(src="images/job/cook.png" alt="Повар")
+          p.job__name.text__card Повар
+          .job__card--layer
+            p.job__discription Доставка товара по магазинам <br>и гипермаркетам компании в обслуживаемом регионе
+        .job__card
+          img.job__img(src="images/job/seller.png" alt="Продавец")
+          p.job__name.text__card Продавец
+          .job__card--layer
+            p.job__discription Доставка товара по магазинам <br>и гипермаркетам компании в обслуживаемом регионе
+        .job__card
+          img.job__img(src="images/job/inspector.png" alt="Приёмщик")
+          p.job__name.text__card Приёмщик
+          .job__card--layer
+            p.job__discription Доставк а товара по магазинам <br>и гипермаркетам компаниив обслуживаемом регионе
+
+// End job

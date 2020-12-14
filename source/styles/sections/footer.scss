@@ -1,0 +1,68 @@
+$bg-footer: #F5F5F5;
+
+.footer {
+  background-color: $bg-footer;
+  margin-top: 72px;
+
+  &__wrap {
+    width: 100%;
+    height: 235px;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 89px;
+    margin-top: 72px;
+    background-color: $white;
+    border-radius: 8px;
+    padding: 24px;
+  }
+
+  &__logo {
+    width: 50%;
+  }
+
+  &__title {
+    margin-left: 23px;
+    color: $black;
+  }
+
+  &__link--share {
+    font-size: 2rem;
+    color: $black;
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  &__img--vkontacte {
+    margin-left: 8px;
+  }
+
+  &__content--copyright {
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+    line-height: 18px;
+    margin-top: 24px;
+  }
+
+  &__copyright {
+    width: 50%;
+  }
+
+  &__politics {
+    color: $black;
+  }
+
+}
+
+.social__link {
+  width: 24px;
+  height: 24px;
+}

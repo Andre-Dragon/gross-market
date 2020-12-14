@@ -1,6 +1,6 @@
 'use strict';
 
-const slider = function () {
+const slider = () => {
   const slides = document.querySelectorAll('.banner__item');
   const btnPrev = document.querySelector('.btn__prev');
   const btnNext = document.querySelector('.btn__next');
@@ -8,35 +8,33 @@ const slider = function () {
   let position = 0;
   const maxSlide = slides.length;
 
-  const goToSlide = function (slide) {
+  const goToSlide = slide => {
     slides.forEach(
       (s, i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`)
     );
   };
 
-    const checkBtns = () => {
+  const checkBtns = () => {
     if (position === 0) {
       btnPrev.disabled = true;
-      btnPrev.style.opacity = 0.2;
+      btnPrev.classList.add('btn__hide');
     } else {
       btnPrev.disabled = false;
-      btnPrev.style.opacity = 1;
+      btnPrev.classList.remove('btn__hide');
     }
 
     if (position === (maxSlide - 1)) {
       btnNext.disabled = true;
-      btnNext.style.opacity = 0.2;
+      btnNext.classList.add('btn__hide');
     } else {
       btnNext.disabled = false;
-      btnNext.style.opacity = 1;
+      btnNext.classList.remove('btn__hide');
     }
   };
 
   // Next slide
-  const nextSlide = function () {
-    if (position === maxSlide - 1) {
-      // position = 0;
-    } else {
+  const nextSlide = () => {
+    if (position !== maxSlide - 1) {
       position++;
     }
 
@@ -45,10 +43,8 @@ const slider = function () {
   };
 
   // Prev slide
-  const prevSlide = function () {
-    if (position === 0) {
-      // position = maxSlide - 1;
-    } else {
+  const prevSlide = () => {
+    if (position !== 0) {
       position--;
     }
 
@@ -56,7 +52,7 @@ const slider = function () {
     goToSlide(position);
   };
 
-  const init = function () {
+  const init = () => {
     goToSlide(0);
   };
 

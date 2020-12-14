@@ -6,6 +6,7 @@
 
 html, body {
 	height: 100%;
+	background: $white;
 }
 
 body {
@@ -14,6 +15,16 @@ body {
 	font-size: 1rem;
 	line-height: 41px;
 	color: $black;
+}
+
+h1 {
+	font-size: 4.5rem;
+  line-height: 66px;
+}
+
+h2 {
+	font-size: 2rem; 
+	// text-transform: uppercase;
 }
 
 a {

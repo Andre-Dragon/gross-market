@@ -2,6 +2,7 @@ $colorLogo: #C4C4C4;
 
 .header {
   width: 100%;
+  background-color: $white;
 
   &__wrap {
     display: flex;
@@ -11,21 +12,9 @@ $colorLogo: #C4C4C4;
     padding-bottom: 32px;
   }
 
-  &__logo {
-    display: flex;
-    align-items: center;
-  }
-
-  &__img {
-    width: 21px;
-    height: 30px;
-  }
-
-  &__name {
+  &__title {
     margin-left: 23px;
-    font-size: 2rem;
     color: $colorLogo;
-    text-transform: uppercase;
   }
 
   &__phone {
