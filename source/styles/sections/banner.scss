@@ -22,6 +22,22 @@ $bg-banner: #F5F5F5;
     transition: transform 1s;
   }
 
+  &__item:nth-child(2n) {
+
+    .banner__text--name {
+      left: 120px;
+      top: 152px;
+      bottom: auto;
+    }
+
+    .banner__text--work {
+      right: 120px;
+      bottom: 156px;
+      top: auto;
+    }
+
+  }
+
   &__wrap {
     display: flex;
     align-items: center;
@@ -30,13 +46,13 @@ $bg-banner: #F5F5F5;
     width: 100%;
   }
 
-  &__container--img {
-    position: relative;
+  &__title {
+    max-width: 273px;
+    margin: 48px 0 154px;
   }
 
-  &__title {
-    width: 375px;
-    margin: 48px 0 154px;
+  &__container--img {
+    position: relative;
   }
 
   &__img {
@@ -50,24 +66,14 @@ $bg-banner: #F5F5F5;
     position: absolute;
   }
 
-  &--text__name--first {
+  &__text--name {
     left: 120px;
     bottom: 156px;
   }
 
-  &--text__work--first {
+  &__text--work {
     top: 152px;
     right: 120px;
-  }
-
-  &--text__name--second {
-    left: 120px;
-    top: 152px;
-  }
-
-  &--text__work--second {
-    right: 120px;
-    bottom: 156px;
   }
 
   &__wrap--btns {

@@ -1,0 +1,8 @@
+mixin card(img, title, discription)
+
+  .job__card
+    img.job__img(src="images/job/" + img alt=title)
+    p.job__name.text__card #{title} 
+    .job__card--layer.hide       
+      p.job__discription #{discription}
+

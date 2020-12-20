@@ -1,0 +1,9 @@
+mixin item(title, img, name, job)
+
+  .banner__item
+    .banner__wrap.wrap
+      h1.banner__title #{title}
+      .banner__container--img
+        img(src="images/banner/" + img alt=job).banner__img
+        p.banner__text--name.banner__text--card.text__card #{name}
+        p.banner__text--work.banner__text--card.text__card #{job}

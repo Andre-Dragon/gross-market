@@ -1,39 +1,14 @@
+include ./../mixins/banner_card
+
 //- banner carousel
 
 section.banner
   .banner__carousel
+    +item('У тебя к этому талант', 'banner-1.jpg', 'Валентин', 'Пекарь')
+    +item('У тебя всё под контролем', 'banner-2.jpg', 'Ксения', 'Товаровед')
+    +item('У тебя к этому талант', 'banner-3.jpg', 'Виктор', 'Водитель')
+    +item('У тебя всё под контролем', 'banner-4.jpg', 'Мария', 'Кассир')
 
-    .banner__item
-      .banner__wrap.wrap
-        h1.banner__title У тебя <br>к этому талант
-        .banner__container--img
-          img(src="images/banner/banner-1.jpg" alt="Баннер пекарь").banner__img
-          p.banner--text__name--first.banner__text--card.text__card Валентин
-          p.banner--text__work--first.banner__text--card.text__card Пекарь
-
-    .banner__item 
-      .banner__wrap.wrap
-        h1.banner__title У тебя <br>всё под контролем
-        .banner__container--img
-          img(src="images/banner/banner-2.jpg" alt="Баннер товаровед").banner__img
-          p.banner--text__name--second.banner__text--card.text__card Ксения
-          p.banner--text__work--second.banner__text--card.text__card Товаровед
-
-    //- .banner__item
-    //-   .banner__wrap.wrap
-    //-     h1.banner__title У тебя <br>к этому талант
-    //-     .banner__container--img
-    //-       img(src="images/banner/banner-1.jpg" alt="Баннер пекарь").banner__img
-    //-       p.banner--text__name--first.banner__text--card.text__card Валентин
-    //-       p.banner--text__work--first.banner__text--card.text__card Пекарь
-
-    //- .banner__item 
-    //-   .banner__wrap.wrap
-    //-     h1.banner__title У тебя <br>всё под контролем
-    //-     .banner__container--img
-    //-       img(src="images/banner/banner-2.jpg" alt="Баннер товаровед").banner__img
-    //-       p.banner--text__name--second.banner__text--card.text__card Ксения
-    //-       p.banner--text__work--second.banner__text--card.text__card Товаровед
 
   .banner__wrap--btns
     .wrap
