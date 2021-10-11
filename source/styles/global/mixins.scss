@@ -1,6 +1,6 @@
 @mixin button() {
   background-color: $second;
-  border-radius: 8px;
+  border-radius: 4px;
   text-align: center;
   display: block;
   appearance: none;
@@ -11,10 +11,6 @@
   margin: 0;
   transition: all .8s;
   @content;
-
-  &:hover, &:active {
-    background-color: $buttonHover;
-  }
 }
 
 @mixin min-max($min-width, $max-width, $padding) {

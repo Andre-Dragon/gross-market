@@ -2,33 +2,39 @@ include ./../mixins/job_card
 
 //- job
 
-section.job
-  .job__wrap.wrap
-    .job__header
-      h2.job__title вакансии в гросс маркете
+section.slider(data-slider="sliderJob")
+  .slider__wrap.wrap
+    .slider__header
+      h3.slider__title вакансии в гросс маркете
 
-      .job__btns
-        button.job__button.button__prev
-          img.btn__img(src="images/icons/prev.svg" alt="назад")
-        button.job__button.button__next
-          img.btn__img(src="images/icons/next.svg" alt="вперед")
+      .slider__btns
+        button.slider__control(data-slide="prev")
+        button.slider__control(data-slide="next")
 
-    .job__main
-      .job__carousel
-        .job__track
+    .slider__container
+      .slider__wrapper
+        .slider__items
         
-          +card('expert.png', 'Товаровед', 'Доставка товара по магазинам и гипермаркетам компании в обслуживаемом регионе')
+          +card('expert.png', 'Товаровед', 'Доставка товара по магазинам и гипермаркетам компании в обслуживаемом регионе', '1')
     
-          +card('driver.png', 'Водитель', 'Доставка товара по магазинам и гипермаркетам компании в обслуживаемом регионе')
+          +card('driver.png', 'Водитель', 'Доставка товара по магазинам и гипермаркетам компании в обслуживаемом регионе', '2')
 
-          +card('baker.png', 'Пекарь', 'Доставка товара по магазинам и гипермаркетам компании в обслуживаемом регионе')
+          +card('baker.png', 'Пекарь', 'Доставка товара по магазинам и гипермаркетам компании в обслуживаемом регионе', '3')
 
-          +card('cashier.png', 'Кассир', 'Доставка товара по магазинам и гипермаркетам компании в обслуживаемом регионе')
+          +card('cashier.png', 'Кассир', 'Доставка товара по магазинам и гипермаркетам компании в обслуживаемом регионе', '4')
 
-          +card('cook.png', 'Повар', 'Доставка товара по магазинам и гипермаркетам компании в обслуживаемом регионе')
+          +card('cook.png', 'Повар', 'Доставка товара по магазинам и гипермаркетам компании в обслуживаемом регионе', '5')
 
-          +card('seller.png', 'Продавец', 'Доставка товара по магазинам и гипермаркетам компании в обслуживаемом регионе')
+          +card('seller.png', 'Продавец', 'Доставка товара по магазинам и гипермаркетам компании в обслуживаемом регионе', '6')
 
-          +card('inspector.png', 'Приёмщик', 'Доставка товара по магазинам и гипермаркетам компании в обслуживаемом регионе')
+          +card('inspector.png', 'Приёмщик', 'Доставка товара по магазинам и гипермаркетам компании в обслуживаемом регионе', '7')
+    ol.slider__indicators
+      li(data-slide-to="0")
+      li(data-slide-to="1")
+      li(data-slide-to="2")
+      li(data-slide-to="3")
+      li(data-slide-to="4")
+      li(data-slide-to="5")
+      li(data-slide-to="6")
           
 // End job

@@ -1,8 +1,9 @@
-mixin card(img, title, discription)
+mixin card(img, title, description, id)
 
-  .job__card
-    img.job__img(src="images/job/" + img alt=title)
-    p.job__name.text__card #{title} 
-    .job__card--layer.hide       
-      p.job__discription #{discription}
+  .slider__item
+    .slider__item--content
+      img.slider__item--img(src="images/job/" + img alt=title)
+      p.slider__name.text__item #{title} 
+      .slider__card--layer(data-id=id)    
+        p.slider__description #{description}
 

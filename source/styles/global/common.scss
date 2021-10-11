@@ -3,7 +3,8 @@
 }
 
 .wrap {
-  @include min-max(320px, 1188px, 39px);
+  @include min-max(320px, 1188px, 15px);
+  width: 100%;
 }
 
 .common__logo {
@@ -14,6 +15,29 @@
 .common__img {
   width: 21px;
   height: 30px;
+}
+
+.common__title {
+  font-size: 2rem; 
+  margin-left: 23px;
+  margin-right: 10px;
+
+  @media (max-width: 798px) {
+    font-size: 1.625rem;
+    margin-left: 14px;
+  }
+
+  @media (max-width: 540px) {
+    line-height: 1;
+    font-size: 1.5rem;
+    margin-left: 10px;
+  }
+
+  @media (max-width: 360px) {
+    width: 80px;
+    font-size: 1.325rem;
+  }
+
 }
 
 .hide {

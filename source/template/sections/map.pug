@@ -3,8 +3,12 @@
 section.map
   .map__wrap.wrap
     .main__header
-      h2.map__title география
+      h3.map__title география
     .map__main
-      .map__container
+      .map__container#map
+        .map__btns 
+          .map__button.button-legalentities(data-user-id="legal") юрлица
+          .map__button.button-individuals(data-user-id="physical") физлица
+          .map__button.map__button--active.button-showall показать всё
 
 // End map

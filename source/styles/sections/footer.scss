@@ -1,12 +1,12 @@
-$bg-footer: #F5F5F5;
+// footer
 
 .footer {
-  background-color: $bg-footer;
+  background-color: $first;
   margin-top: 72px;
 
   &__wrap {
     width: 100%;
-    height: 235px;
+    min-height: 235px;
   }
 
   &__content {
@@ -25,13 +25,20 @@ $bg-footer: #F5F5F5;
   }
 
   &__title {
-    margin-left: 23px;
     color: $black;
   }
 
-  &__link--share {
+  &__text--share {
     font-size: 2rem;
     color: $black;
+
+    @media(max-width: 798px) {
+      font-size: 1.325rem;
+    }
+
+    @media(max-width: 600px) {
+      display: none;
+    }
   }
 
   &__social {
@@ -47,6 +54,7 @@ $bg-footer: #F5F5F5;
   &__content--copyright {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     font-size: 0.875rem;
     line-height: 18px;
     margin-top: 24px;
@@ -54,10 +62,29 @@ $bg-footer: #F5F5F5;
 
   &__copyright {
     width: 50%;
+
+    @media(max-width: 798px) {
+      width: 40%;
+    }
+
+    @media(max-width: 540px) {
+      width: 100%;
+      margin-bottom: 30px;
+    }
   }
 
   &__politics {
     color: $black;
+
+    @media(max-width: 540px) { 
+      margin-bottom: 14px;
+      font-size: 0.875rem;
+      order: -1;
+    }
+
+    @media(max-width: 360px) {
+      font-size: 0.75rem;
+    }
   }
 
 }
