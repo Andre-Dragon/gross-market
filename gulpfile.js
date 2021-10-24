@@ -49,8 +49,9 @@ gulp.task('styles:compile', function () {
 /* ------------ Js ------------- */
 gulp.task('js', function() {
   return gulp.src([
+    'node_modules/jquery/dist/jquery.js',
+    'node_modules/slick-carousel/slick/slick.js',
     'source/js/**/*.js'
-
   ])
   .pipe(sourcemaps.init())
   .pipe(concat('main.min.js'))

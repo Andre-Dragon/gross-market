@@ -7,6 +7,10 @@
   &__wrap {
     width: 100%;
     min-height: 235px;
+
+    @media(max-width: 540px) {
+      min-height: 216px;
+    }
   }
 
   &__content {
@@ -18,10 +22,25 @@
     background-color: $white;
     border-radius: 8px;
     padding: 24px;
+
+    @media(max-width: 600px) {
+      margin-top: 56px;
+      height: 70px;
+    }
+
+    @media(max-width: 540px) {
+      margin-top: 46px;
+      height: 0px;
+      padding: 28px 12px;
+    }
   }
 
   &__logo {
     width: 50%;
+
+    @media(max-width: 600px) {
+      width: 100%;
+    }
   }
 
   &__title {

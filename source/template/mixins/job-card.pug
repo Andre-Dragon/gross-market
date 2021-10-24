@@ -1,0 +1,11 @@
+mixin card(img, title, description, id)
+
+  .slider__item
+    .slider__item--wrap 
+      p.slider__name.text__item #{title} 
+      .slider__item--content
+        img.slider__item--img(src="images/job/" + img alt=title)
+      .slider__card--layer.hide
+        p.slider__description #{description}
+        button.slider__button заполнить анкету   
+

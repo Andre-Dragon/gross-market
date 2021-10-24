@@ -549,27 +549,30 @@ const jobCarousel = () => {
 jobCarousel();
 
 const jobCardHandler = () => {
-  const sliderItems = document.querySelector('.slider__items');
-  const sliderItem = document.querySelectorAll('.slider__card--layer');
+  const sliderContents = document.querySelectorAll('.slider__item--content');
+  const sliderCards = document.querySelectorAll('.slider__card--layer');
 
-  const jobBlogHandler = id => {
-    alert(`Здесь будет контент под id:${id}`);
+  const deactivationCardActive = () => {
+    sliderContents.forEach( item => item.classList.remove('hide'));
+    sliderCards.forEach(card => {
+      card.classList.add('hide');
+    });
   };
 
-  const cardIdHandler = id => {
-    [...sliderItem].find(item => {
-      if (id === item.dataset.id) {
-        jobBlogHandler( item.dataset.id );
+  const cardActive = (item, index) => {
+    [...sliderCards].find( (card, i) => {
+      if (index === i) {
+        item.classList.add('hide');
+        card.classList.remove('hide');
       }
     });
   };
 
-  sliderItems.addEventListener('click', ({target}) => {
-    if (target.classList.contains('slider__card--layer') || 
-    target.classList.contains('slider__description')) {
-      cardIdHandler(target.dataset.id);
-    }
-  });
+  sliderContents.forEach( (item, i) => item.addEventListener('click', () => {
+    deactivationCardActive();
+    cardActive(item, i);
+  }));
+
 };
 
 jobCardHandler();
